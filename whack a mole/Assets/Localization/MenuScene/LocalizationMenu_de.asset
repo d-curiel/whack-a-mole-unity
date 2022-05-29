@@ -16,17 +16,15 @@ MonoBehaviour:
     m_Code: de
   m_SharedData: {fileID: 11400000, guid: e6ab6bf41a0cc244b81715b93600f25f, type: 2}
   m_Metadata:
-    m_Items:
-    - id: 0
+    m_Items: []
   m_TableData:
   - m_Id: 43426500608
-    m_Localized: 
+    m_Localized: Neues Spiel
     m_Metadata:
-      m_Items:
-      - id: 0
+      m_Items: []
+  - m_Id: 320096445386752
+    m_Localized: "\rDen Maulwurf zerschlagen"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
-    00000000:
-      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
-      data:
-        m_Entries: 00d06b1c0a000000

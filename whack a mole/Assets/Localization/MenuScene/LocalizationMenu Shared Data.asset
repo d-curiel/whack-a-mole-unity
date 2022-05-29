@@ -19,6 +19,10 @@ MonoBehaviour:
     m_Key: NewGameText
     m_Metadata:
       m_Items: []
+  - m_Id: 320096445386752
+    m_Key: GameTitleText
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
