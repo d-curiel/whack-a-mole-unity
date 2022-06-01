@@ -8,7 +8,7 @@ public class MolePool : MonoBehaviour
     [SerializeField]
     private GameObject _molePrefab;
     [SerializeField]
-    private int _poolSize = 10;
+    private int _poolSize = 15;
     [SerializeField]
     List<GameObject> _moleList;
 

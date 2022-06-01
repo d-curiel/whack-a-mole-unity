@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour
     private float timeRemaining;
     private float timeLastSpawn = 0f;
     private float timeRemainingMax = 60f;
-    private float maxTimeBetweenSpawns = 1f;
-    private float minTimeBetweenSpawns = 0.5f;
+    private float maxTimeBetweenSpawns = 0.7f;
+    private float minTimeBetweenSpawns = 0.2f;
     private GameObject [] moleSpots = new GameObject[24];
 public Texture2D crosshair; 
 
@@ -25,9 +25,10 @@ public Texture2D crosshair;
 
     private void Start(){
         
+        //TODO: Revisar esta parte
      Vector2 cursorOffset = new Vector2(crosshair.width/2, crosshair.height/2);
       Cursor.SetCursor(crosshair, cursorOffset, CursorMode.Auto);
-      
+
         moleSpots = GameObject.FindGameObjectsWithTag("MoleSpot");
         timeRemaining = timeRemainingMax;
         score = 0;
@@ -47,7 +48,7 @@ public Texture2D crosshair;
             if (timeLastSpawn >= Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns))
             {
                 timeLastSpawn = 0;
-                GameObject mole = MolePool.instance.GetMole();
+                GameObject mole = GetRandomMole();
                 if(mole != null){
                     GameObject moleSpot = FindFreeMoleSpot();
                     if(moleSpot != null){
@@ -79,4 +80,14 @@ public Texture2D crosshair;
         }
     }
 
+private GameObject GetRandomMole(){
+    int random = Random.Range(0, 10);
+    if(random >= 0 && random <= 5){
+        return MolePool.instance.GetMole();
+    }else if(random > 5 && random < 9){
+        return RedDinoPool.instance.GetMole();
+    }else{
+        return YellowDinoPool.instance.GetMole();
+    }
+}
 }

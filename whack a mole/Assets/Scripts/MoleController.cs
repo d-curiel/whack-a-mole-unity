@@ -7,6 +7,8 @@ public class MoleController : MonoBehaviour
     Animator animator;
     [SerializeField]
     int score;
+    [SerializeField]
+    float timeAwake;
     private bool hit;
     // Use this for initialization
     void Start () {
@@ -30,7 +32,7 @@ public class MoleController : MonoBehaviour
     }
 
     IEnumerator MoleSpawner() {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(timeAwake);
         StartCoroutine(MoleHide());
     }
 

@@ -21,6 +21,10 @@ MonoBehaviour:
     m_Address: Assets/Localization/MenuScene/LocalizationMenu Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: 5e2b77f897c79db4587f9c8f7801434b
+    m_Address: Assets/Localization/MainScene/LocalizationGame Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 73c761a20e7c4d449809456e1f9b8543, type: 2}
   m_SchemaSet:

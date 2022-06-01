@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 10
+  timeAwake: 3
 --- !u!61 &7403474538621660787
 BoxCollider2D:
   m_ObjectHideFlags: 0
