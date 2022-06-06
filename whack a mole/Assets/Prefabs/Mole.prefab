@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 10
   timeAwake: 3
+  hitClip: {fileID: 8300000, guid: 0f27ec6d71f0b7f4e8a3400bb06d3110, type: 3}
 --- !u!61 &7403474538621660787
 BoxCollider2D:
   m_ObjectHideFlags: 0

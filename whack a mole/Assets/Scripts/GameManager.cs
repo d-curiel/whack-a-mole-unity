@@ -68,8 +68,7 @@ public Texture2D crosshair;
             timeRemaining -= Time.deltaTime;
             timeLastSpawn += Time.deltaTime;
             if (timeRemaining <= 0)
-            {
-                GameOver();
+            {                GameOver();
             }else{
                 MainSceneUIManager.instance.setTimeRemaining(timeRemaining.ToString("0"));
                 if (timeLastSpawn >= Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns))
@@ -89,10 +88,11 @@ public Texture2D crosshair;
 
     private void GameOver(){
         
-        Time.timeScale = 0;
         gameStarted = false;
         this.gameObject.GetComponent<BackgroundMusicController>().StopMusic();
         this.audioSource.PlayOneShot(victoryClip);
+        MainSceneUIManager.instance.GameOver(score.ToString());
+        Time.timeScale = 0;
     }
     private GameObject FindFreeMoleSpot(){
         GameObject moleSpot = moleSpots[Random.Range(0, moleSpots.Length)];

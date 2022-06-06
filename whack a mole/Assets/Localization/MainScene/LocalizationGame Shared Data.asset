@@ -51,6 +51,10 @@ MonoBehaviour:
     m_Key: RestartButtonText
     m_Metadata:
       m_Items: []
+  - m_Id: 1825456779939840
+    m_Key: PointsText
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

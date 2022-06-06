@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class MoleController : MonoBehaviour
 {
     Animator animator;
@@ -10,16 +11,23 @@ public class MoleController : MonoBehaviour
     [SerializeField]
     float timeAwake;
     private bool hit;
+    private bool hiding;
+    private AudioSource audioSource;
+    [SerializeField]
+    AudioClip hitClip;
     // Use this for initialization
     void Start () {
         hit = false;
+        hiding = false;
         animator = GetComponent<Animator>();
+        audioSource = this.gameObject.GetComponent<AudioSource>();
     }
     
     public void MoleHit()
     {
-        if(!hit){
+        if(!hit && !hiding)){
             hit = true;
+            audioSource.PlayOneShot(hitClip);
             GameManager.instance.ModifyScore(score);
             StartCoroutine(MoleHitAnimation());
         }
@@ -44,6 +52,7 @@ public class MoleController : MonoBehaviour
     
     IEnumerator MoleHide() {
         animator.SetBool("Hide", true);
+        hiding = true;
         yield return new WaitForSeconds(0.5f);
         GameManager.instance.CleanHiddenMole(this.gameObject);
         this.gameObject.SetActive(false);

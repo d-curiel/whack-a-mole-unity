@@ -56,5 +56,9 @@ MonoBehaviour:
     m_Localized: Neu starten
     m_Metadata:
       m_Items: []
+  - m_Id: 1825456779939840
+    m_Localized: Punkte
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
