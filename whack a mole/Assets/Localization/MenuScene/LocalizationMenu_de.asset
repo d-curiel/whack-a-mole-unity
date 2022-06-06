@@ -23,7 +23,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 320096445386752
-    m_Localized: "\rDen Maulwurf zerschlagen"
+    m_Localized: Zerschmettere den Dino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4271417963827200
+    m_Localized: Optionen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4275892644466688
+    m_Localized: "Zur\xFCckkehren"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4276085741834240
+    m_Localized: Idiom
     m_Metadata:
       m_Items: []
   references:

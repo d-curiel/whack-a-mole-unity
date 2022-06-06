@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 51731222528
-    m_Localized: TIEMPO
+    m_Localized: "PUNTUACI\xD3N"
     m_Metadata:
       m_Items: []
   - m_Id: 21279539974144
@@ -31,7 +31,31 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 22647923265536
-    m_Localized: ACEPTAR
+    m_Localized: REANUDAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374740517376000
+    m_Localized: INSTRUCCIONES DE JUEGO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374836491440128
+    m_Localized: 'Usa el raton para eliminar a tantos dinos como puedas y acumula
+      la maxima cantidad de puntos.
+
+      Haz click izquierdo sobre el dino para
+      eliminarlo'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380733678669824
+    m_Localized: JUGAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1794694278008832
+    m_Localized: Puntuacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795636410961920
+    m_Localized: Reiniciar
     m_Metadata:
       m_Items: []
   references:

@@ -17,6 +17,44 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 5e2b77f897c79db4587f9c8f7801434b, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 51731222528
+    m_Localized: PUNKTZAHL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374740517376000
+    m_Localized: SPIELANLEITUNG
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374836491440128
+    m_Localized: "Eliminiere mit der Maus so viele Dinos wie m\xF6glich und sammle
+      die maximale Punktzahl.\r\nKlicken Sie mit der linken Maustaste auf den Dino,
+      um ihn zu entfernen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22671818215424
+    m_Localized: VERLASSEN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22647923265536
+    m_Localized: FORTSETZEN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21279539974144
+    m_Localized: PAUSE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380733678669824
+    m_Localized: ABSPIELEN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1794694278008832
+    m_Localized: Punktzahl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795636410961920
+    m_Localized: Neu starten
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

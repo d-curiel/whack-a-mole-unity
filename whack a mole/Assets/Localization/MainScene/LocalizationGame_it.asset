@@ -17,6 +17,44 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 5e2b77f897c79db4587f9c8f7801434b, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 51731222528
+    m_Localized: PUNTO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374740517376000
+    m_Localized: ISTRUZIONI DI GIOCO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374836491440128
+    m_Localized: "Usa il mouse per eliminare quanti pi\xF9 dinosauri puoi e accumulare
+      il numero massimo di punti.\r\nFai clic con il pulsante sinistro del mouse
+      sul dinosauro per rimuoverlo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22671818215424
+    m_Localized: USCIRE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22647923265536
+    m_Localized: RIPRENDERE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21279539974144
+    m_Localized: PAUSA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380733678669824
+    m_Localized: "\rgiocare"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1794694278008832
+    m_Localized: Punto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795636410961920
+    m_Localized: Ricomincia
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

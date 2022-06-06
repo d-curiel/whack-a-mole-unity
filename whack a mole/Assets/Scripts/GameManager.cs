@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(AudioSource))]
 public class GameManager : MonoBehaviour
 {
     
@@ -13,6 +15,9 @@ public class GameManager : MonoBehaviour
     private float maxTimeBetweenSpawns = 0.7f;
     private float minTimeBetweenSpawns = 0.2f;
     private GameObject [] moleSpots = new GameObject[24];
+    private bool gameStarted = false;
+    private AudioSource audioSource;
+    private AudioClip victoryClip;
 public Texture2D crosshair; 
 
     private void Awake()
@@ -21,13 +26,13 @@ public Texture2D crosshair;
         {
             instance = this;
         }
+        Time.timeScale = 0;
     }
 
     private void Start(){
-        
-        //TODO: Revisar esta parte
-     Vector2 cursorOffset = new Vector2(crosshair.width/2, crosshair.height/2);
-      Cursor.SetCursor(crosshair, cursorOffset, CursorMode.Auto);
+        audioSource = this.gameObject.GetComponent<AudioSource>();
+        Vector2 cursorOffset = new Vector2(crosshair.width/2, crosshair.height/2);
+        Cursor.SetCursor(crosshair, cursorOffset, CursorMode.Auto);
 
         moleSpots = GameObject.FindGameObjectsWithTag("MoleSpot");
         timeRemaining = timeRemainingMax;
@@ -36,29 +41,59 @@ public Texture2D crosshair;
         MainSceneUIManager.instance.setScore(this.score.ToString());
     }
 
+    public void StartGame()
+    {
+        gameStarted = true;
+        Time.timeScale = 1;
+    }
+
+    public void PauseGame()
+    {
+        gameStarted = false;
+        Time.timeScale = 0;
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public bool IsGameStarted()
+    {
+        return gameStarted;
+    }
+
     private void FixedUpdate() {
-        timeRemaining -= Time.deltaTime;
-        timeLastSpawn += Time.deltaTime;
-        if (timeRemaining <= 0)
-        {
-            Debug.Log("Game Over");
-            Time.timeScale = 0;
-        }else{
-            MainSceneUIManager.instance.setTimeRemaining(timeRemaining.ToString("0"));
-            if (timeLastSpawn >= Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns))
+        if(gameStarted){
+            timeRemaining -= Time.deltaTime;
+            timeLastSpawn += Time.deltaTime;
+            if (timeRemaining <= 0)
             {
-                timeLastSpawn = 0;
-                GameObject mole = GetRandomMole();
-                if(mole != null){
-                    GameObject moleSpot = FindFreeMoleSpot();
-                    if(moleSpot != null){
-                        moleSpot.GetComponent<MoleSpotController>().ShowMole(mole);
+                GameOver();
+            }else{
+                MainSceneUIManager.instance.setTimeRemaining(timeRemaining.ToString("0"));
+                if (timeLastSpawn >= Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns))
+                {
+                    timeLastSpawn = 0;
+                    GameObject mole = GetRandomMole();
+                    if(mole != null){
+                        GameObject moleSpot = FindFreeMoleSpot();
+                        if(moleSpot != null){
+                            moleSpot.GetComponent<MoleSpotController>().ShowMole(mole);
+                        }
                     }
                 }
             }
         }
     }
 
+    private void GameOver(){
+        
+        Time.timeScale = 0;
+        gameStarted = false;
+        this.gameObject.GetComponent<BackgroundMusicController>().StopMusic();
+        this.audioSource.PlayOneShot(victoryClip);
+    }
     private GameObject FindFreeMoleSpot(){
         GameObject moleSpot = moleSpots[Random.Range(0, moleSpots.Length)];
         if(!moleSpot.GetComponent<MoleSpotController>().IsMoleShowing()){

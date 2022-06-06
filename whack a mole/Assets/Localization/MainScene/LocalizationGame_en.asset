@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 51731222528
-    m_Localized: TIME
+    m_Localized: SCORE
     m_Metadata:
       m_Items: []
   - m_Id: 21279539974144
@@ -32,6 +32,29 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 22647923265536
     m_Localized: RESUME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374740517376000
+    m_Localized: GAME INSTRUCTIONS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374836491440128
+    m_Localized: 'Use the mouse to eliminate as many dinos as you can and accumulate
+      the maximum number of points.
+
+      Left click on the dino to remove it'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380733678669824
+    m_Localized: PLAY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1794694278008832
+    m_Localized: Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795636410961920
+    m_Localized: Restart
     m_Metadata:
       m_Items: []
   references:

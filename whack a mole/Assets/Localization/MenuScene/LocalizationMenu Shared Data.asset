@@ -23,6 +23,18 @@ MonoBehaviour:
     m_Key: GameTitleText
     m_Metadata:
       m_Items: []
+  - m_Id: 4271417963827200
+    m_Key: OptionsButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4275892644466688
+    m_Key: BackButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4276085741834240
+    m_Key: LanguageSelectorLabel
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

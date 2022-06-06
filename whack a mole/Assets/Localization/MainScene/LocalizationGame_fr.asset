@@ -17,6 +17,43 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 5e2b77f897c79db4587f9c8f7801434b, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 51731222528
+    m_Localized: SCORE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374740517376000
+    m_Localized: INSTRUCTIONS DE JEU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374836491440128
+    m_Localized: "A l'aide de la souris, \xE9liminez un maximum de dinos et accumulez
+      le maximum de points.\r\nClic gauche sur le dino pour le supprimer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22671818215424
+    m_Localized: QUITTER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22647923265536
+    m_Localized: recommencer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21279539974144
+    m_Localized: PAUSE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380733678669824
+    m_Localized: JOUER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1794694278008832
+    m_Localized: Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795636410961920
+    m_Localized: "Red\xE9marrer"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

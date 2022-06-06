@@ -16,7 +16,7 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 5e2b77f897c79db4587f9c8f7801434b
   m_Entries:
   - m_Id: 51731222528
-    m_Key: TimeText
+    m_Key: ScoreText
     m_Metadata:
       m_Items: []
   - m_Id: 21279539974144
@@ -29,6 +29,26 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 22671818215424
     m_Key: QuitButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374740517376000
+    m_Key: InstructionsTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 374836491440128
+    m_Key: InstructionsText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380733678669824
+    m_Key: PlayButtonText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1794694278008832
+    m_Key: ScoreMenuTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795636410961920
+    m_Key: RestartButtonText
     m_Metadata:
       m_Items: []
   m_Metadata:

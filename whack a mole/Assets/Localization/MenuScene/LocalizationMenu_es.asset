@@ -23,7 +23,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 320096445386752
-    m_Localized: Aplasta al Topo
+    m_Localized: Aplasta al Dino
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4271417963827200
+    m_Localized: Opciones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4275892644466688
+    m_Localized: Volver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4276085741834240
+    m_Localized: Idioma
     m_Metadata:
       m_Items: []
   references:
