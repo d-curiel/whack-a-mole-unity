@@ -7349,6 +7349,7 @@ MonoBehaviour:
   _optionsButton: {fileID: 1606585535}
   _backButton: {fileID: 870909620}
   _selectionLanguage: {fileID: 1518205336}
+  crosshair: {fileID: 2800000, guid: 23bc116911b8cf84ea296ea3534a7f11, type: 3}
 --- !u!4 &690679745
 Transform:
   m_ObjectHideFlags: 0

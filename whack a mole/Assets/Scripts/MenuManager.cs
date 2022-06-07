@@ -16,13 +16,17 @@ public class MenuManager : MonoBehaviour
     private Button _backButton;
     [SerializeField]
     private GameObject _selectionLanguage;
+    [SerializeField]
+    private Texture2D crosshair; 
     
 
     private void Awake() {
         _menuManager = this;
     }
 
-    private void Start() {
+    private void Start() {        
+        Vector2 cursorOffset = new Vector2(crosshair.width/2, crosshair.height/2);
+        Cursor.SetCursor(crosshair, cursorOffset, CursorMode.Auto);
         _newGameButton.onClick.AddListener(() => {
             this.NewGame();
         });

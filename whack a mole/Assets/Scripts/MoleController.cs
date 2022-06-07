@@ -25,7 +25,7 @@ public class MoleController : MonoBehaviour
     
     public void MoleHit()
     {
-        if(!hit && !hiding)){
+        if(!hit && !hiding){
             hit = true;
             audioSource.PlayOneShot(hitClip);
             GameManager.instance.ModifyScore(score);
@@ -36,6 +36,7 @@ public class MoleController : MonoBehaviour
 
     private void OnEnable() {
         hit = false;
+        hiding = false;
         StartCoroutine(MoleSpawner());
     }
 

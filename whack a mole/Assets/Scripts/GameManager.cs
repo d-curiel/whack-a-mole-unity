@@ -18,7 +18,8 @@ public class GameManager : MonoBehaviour
     private bool gameStarted = false;
     private AudioSource audioSource;
     private AudioClip victoryClip;
-public Texture2D crosshair; 
+    [SerializeField]
+    private Texture2D crosshair; 
 
     private void Awake()
     {
